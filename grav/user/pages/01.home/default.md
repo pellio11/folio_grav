@@ -7,20 +7,21 @@ process:
 ---
 
 <section class="hero">
-	<div class="wrapper">
+	<div class="wrapper wrapper--max">
 		<div class="hero__inner">
-			<h1 class="hero__h1-alt animate-up-step1-start">Product designer in Glasgow</h1>
-			<p class="hero__p-alt animate-up-step1-start">Product designer, illustrator and front end developer <a target="_blank" href="http://www.fanduel.com">Fanduel</a>. I create engaging, intuitive, results driven user interfaces with a focus. <!--on outstanding visual execution.--></p>
+			<!--<h1 class="hero__h4-alt animate-up-step1-start">Product designer in Glasgow</h1>-->
+			<h1 class="hero__h1 animate-up-step1-start">Designer and illustrator working at <a class="a--underline" target="_blank" href="http://www.fanduel.com">Fanduel</a>.</h1>
+			<p class="hero__subp animate-up-step1-start">Designer of brands, mobile applications, user experiences, interfaces and websits with a focus on execution.</p>
 			<div class="hero__cta-wrap animate-up-step2-start">
-				<a href="" class="hero__cta cta cta--margin">View projects</a>
+				<a href="#folio" class="hero__cta cta cta--margin">View projects</a>
 			</div>
 		</div>
 	</div>
 </section>
 <div class="folio_waypoint"></div>
-<section class="folio animate-up-lg-step1-start">
+<section id="folio" class="folio animate-up-lg-step1-start">
 <div class="footerappear_waypoint"></div>
-    <div class="wrapper">
+    <div class="wrapper wrapper--max">
     	<div class="grid-container-flex">
 			{% include 'partials/projectgrid.html.twig'
 			        with {
@@ -44,7 +45,7 @@ process:
 			            'foliowidth': 'grid-6 grid-6--right'
 			        }
 			%}
-			<div class="clear"></div>
+		<div class="clear"></div>
     	</div>
     	<div class="grid-container-flex">
 			{% include 'partials/projectgrid.html.twig'
@@ -73,4 +74,3 @@ process:
     	</div>
     </div>
 </section>
-
